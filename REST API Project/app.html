@@ -1,42 +1,90 @@
-<!DOCTYPE html>
 <html>
-<head>
-    <title>Rest API</title>
-    <script src="scripts.js"></script>
-</head>
-<body>
-    <h1>User Information</h1>
-    <button onclick="getdata()">Display</button>
-    <div id="allposts"></div>
-</body>
-<style>
-    .post
-    {
-        border-width:2px;
-        border: black;
-        border-style: solid;
-        padding: 12px;
-        font-family: Arial, Helvetica, sans-serif;
-        margin: 2px;
-    }
-    .title
-    {
-        font-weight: bold;
-        font-size: large;
-        color: chocolate;
-    }
-    #allposts
-    {
-        padding: 10px;
-        justify-content: space-between;
-    }
-    .post button
-    {
-        background-color: rgb(171, 125, 92);
-        color: azure;
-        border: none;
-        height: 40px;
-        width: 70px;
-    }
-</style>
+    <head>
+        <title>REST API Project</title>
+        <script src="scripts.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>USER Information</h1>
+            <button onclick="getdata()">DISPLAY</button>
+        </header>
+        <div id="allposts"></div>
+    </body>
+    <style>
+        header
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: azure;
+            padding: 10px;
+            box-shadow: 2px 2px 5px black;
+        }
+        header button
+        {
+            background-color: lavender;
+            border: none;
+            height: 35px;
+            width: 100px;
+            border-radius: 2px;
+            box-shadow: 1px 1px 3px gray;
+        }
+        #allposts
+        {
+            padding: 10px;
+            justify-content: space-between;
+        }
+        .post
+        {
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 2px;
+            box-shadow: 2px 2px 10px rgb(221, 155, 108);
+        }
+        .title
+        {
+            font-weight: bold;
+            font-size: 20;
+            color: black;
+            background-color: lavender;
+            padding: 5px;
+            border-radius: 2px;
+            box-shadow: 1px 1px 2px gray;
+        }
+        .name, .email
+        {
+            font-size: 16;
+        }
+        .post button
+        {
+            background-color: rgb(138, 138, 193);
+            color: white;
+            border: none;
+            height: 40px;
+            width: 100px;
+            margin-bottom: 5px;
+            border-radius: 2px;
+            box-shadow: 1px 1px 3px black;
+        }
+        .postbody
+        {
+            display: none;
+            font-size: 18;
+            color: purple;
+            text-shadow: 1px 1px 2px azure;
+        }
+        .comment
+        {
+            background-color: lavender;
+            padding: 5px;
+            box-shadow: 1px 1px 2px purple;
+        }
+        .cname
+        {
+            font-weight: bold;
+            font-size: 16;
+        }
+        .cbody
+        {
+            font-size: 16;
+        }
+    </style>
 </html>
